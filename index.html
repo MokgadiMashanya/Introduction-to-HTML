@@ -4,39 +4,40 @@
   <body>
     <!-- This is the @head and it will encompass our logo and our navigation bar -->
     <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Bootstrap CSS -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/mainstyle.css"/>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       <div>
         <table style="width: 100%">
           <tr>
-            <td>
-              <a href="#">
-                <img src="assets/logo/bird.jpg" height="80px" width="100px" alt="" />
-              </a>
-            </td>
-            <td align="right">
-              <nav
-                style="
-                  margin-right: 50px;
-                  margin-top: 16px;
-                  margin-bottom: 16px;
-                  margin-left: 50px;
-                "
-              >
-                <a href="index.html">Home</a>
-                <a href="about_us.html" style="margin: 16px">About Us</a>
-                <a href="contact_us.html">Contact Us</a>
-              </nav>
-            </td>
+            <nav class="navbar navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/logo/bird_r.png" alt="" width="38" height="38" class="d-inline-block align-text-top">
+                  Mokgadi Mashanya
+                </a>
+                <div class="divheader" align="right">
+                  <button class="btn"><a href="index.html" style="color: white;">Home</a></button>
+                  <button class="btn btn-primary"><a href="about_us.html" style="color: white;">About Us</a></button>
+                  <button class="btn btn-primary"><a href="contact_us.html" style="color: white;">Contact Us</a></button>
+                </div>
+              </div>
+            </nav>
           </tr>
         </table>
       </div>
     </head>
 
     <!-- This is our main and it will encompass all our content for the landing page for our site -->
-    <main style="width: 100%;">
+    <main>
       <table style="width: 100%;">
         <tr style="width: 100%;">
-          <video style="object-fit: fill;" width="100%" height="600px" autoplay muted loop>
+          <video autoplay muted loop>
             <source src="assets/video/FuturisticHDinterface.mp4"
              type="video/mp4"
              >
@@ -47,29 +48,30 @@
         <tr>
           <td style="width: 40%; padding-left: 20px;">
             <h1 style="color: #011456;">Mokgadi Mashanya</h1>
-            <p><B>My Bio - </B> Hi my name is Mokgadi Rejoice Mashanya aged 22, i live in Tzaneen.
-               I love reading and learning new things. in my spare time i love going out with friends and family.</p>
-                 <p>I went to Seagotle High Shool and for tertiary i went to
-                   Tshwane University of Technology and Studied Human Resources.</p>
+            <div class="bio_content">
+              <p><B>My Bio - </B> Hi my name is Mokgadi Rejoice Mashanya aged 22, i live in Tzaneen.
+                I love reading and learning new things. in my spare time i love going out with friends and family.</p>
+                  <p>I went to Seagotle High Shool and for tertiary i went to
+                    Tshwane University of Technology and Studied Human Resources.</p>
+            </div>
           </td>
 
           <td style="width: 20%;">
             <!--this part is for creating space between bio text and the bio image-->
           </td>
           <td style="width: 40%;">
-            <img
+            <img class="imgproftag"
               src="assets/imgs/mokgadi.jpg"
               alt=""
               width="300px"
               height="300px"
-              style="border-radius: 50%; object-fit: cover; border: 5px solid #011456;"
+              
             />
           </td>
         </tr>
 
       </table>
       
-
     </main>
 
     <!-- This is our footer and it will encompass all the quick links on our website.-->
@@ -108,5 +110,7 @@
         </tr>
       </table>
     </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
 </html>
